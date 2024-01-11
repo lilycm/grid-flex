@@ -47,6 +47,55 @@ img{
 }
 
 
+.header, .nav, .main, .advertise, .sidebar, .footer{
+    background: plum;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid rgb(92, 1, 1);
+}
+
+.nav ul li{
+    list-style: none;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: rgb(92, 1, 1);
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav{
+    grid-area: nav;
+}
+.header{
+    grid-area: header;
+}
+.main{
+    grid-area: main;
+}
+.advertise{
+    grid-area: advertise;
+}
+.sidebar{
+    grid-area: sidebar;
+}
+.footer{
+    grid-area: footer;
+}
+
+.body-container{
+    display: grid;
+    gap: 20px;
+    grid-template-areas: 
+    "header header header header"
+    "nav main main advertise"
+    "nav main main sidebar"
+    "footer footer footer footer";
+}
+
+
+
 
 
 
